@@ -38,7 +38,8 @@ public class TetherApplication extends Application {
 	
 	public final String DEFAULT_PASSPHRASE = "abcdefghijklm";
 	public final String DEFAULT_LANNETWORK = "192.168.2.0/24";
-	public final String DEFAULT_IPADDRESS = "192.168.2.254"; 
+	public final String DEFAULT_IPADDRESS = "192.168.2.1xx"; 
+		
 	public final String DEFAULT_ENCSETUP   = "wpa_supplicant";
 	public final static int DIRECTION_TYPE_X = 0;
 	public final static int DIRECTION_TYPE_Y = 1;
@@ -356,8 +357,10 @@ public class TetherApplication extends Application {
 		boolean result = this.coretask.runRootCommand(this.coretask.DATA_FILE_PATH+"/bin/ifconfig "+net_interface+" "+ipAddress+" netmask 255.255.255.0");
 		return result;
 	}
+	
 	public String getIpAddress(){
 		return this.settings.getString("ipAddress", DEFAULT_IPADDRESS);
+		
 	}
 
 	

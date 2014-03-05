@@ -157,7 +157,7 @@
 	<string name="bt_warning_line2">This functionality might not work on your device!</string>
 	<string name="txpower_warning_line1">The ability reducing the wifi-transmit power depends on the wifi-chip.</string>
 	<string name="txpower_warning_line2">This functionality might not work on your device!</string>
-
+	<string name="input_ipAddress">xxの部分を学籍番号下二桁に変更してsettingを押して下さい．\nその後startしてください</string>
     <string-array name="notificationmodenames">  
 		<item>None</item>  
 		<item>Unauthorized Clients</item>  

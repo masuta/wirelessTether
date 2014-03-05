@@ -205,6 +205,7 @@ containing a value of this type.
         public static final int global_application_installed=0x7f060001;
         public static final int global_application_name=0x7f060000;
         public static final int global_application_tethering_running=0x7f060003;
+        public static final int input_ipAddress=0x7f06009d;
         public static final int log_activity_nologfile=0x7f060025;
         public static final int main_activity_about=0x7f060009;
         public static final int main_activity_accesscontrol=0x7f060017;
@@ -234,8 +235,8 @@ containing a value of this type.
         public static final int main_activity_stop_summary=0x7f060020;
         /**  Below values don't need to be translated 
          */
-        public static final int main_activity_temperatureunit_celsius=0x7f06009d;
-        public static final int main_activity_temperatureunit_fahrenheit=0x7f06009e;
+        public static final int main_activity_temperatureunit_celsius=0x7f06009e;
+        public static final int main_activity_temperatureunit_fahrenheit=0x7f06009f;
         public static final int main_activity_trackball_pressed_start=0x7f060023;
         public static final int main_activity_trackball_pressed_stop=0x7f060024;
         public static final int main_activity_yes=0x7f060012;
@@ -249,7 +250,7 @@ containing a value of this type.
         public static final int nonetfilter_layout_line1=0x7f060094;
         public static final int nonetfilter_layout_line2=0x7f060095;
         public static final int noroot_layout_line1=0x7f060096;
-        public static final int paypalUrl=0x7f06009f;
+        public static final int paypalUrl=0x7f0600a0;
         public static final int setup_activity_bt_warning_ok=0x7f060050;
         public static final int setup_activity_bt_warning_title=0x7f06004f;
         public static final int setup_activity_error_passphrase_13chars=0x7f060042;
@@ -371,7 +372,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:allowSingleTap
+          @attr name android.tether:allowSingleTap
         */
         public static final int MultiDirectionSlidingDrawer_allowSingleTap = 5;
         /**
@@ -385,7 +386,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:animateOnClick
+          @attr name android.tether:animateOnClick
         */
         public static final int MultiDirectionSlidingDrawer_animateOnClick = 6;
         /**
@@ -401,7 +402,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:bottomOffset
+          @attr name android.tether:bottomOffset
         */
         public static final int MultiDirectionSlidingDrawer_bottomOffset = 3;
         /**
@@ -411,7 +412,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:content
+          @attr name android.tether:content
         */
         public static final int MultiDirectionSlidingDrawer_content = 2;
         /**
@@ -430,7 +431,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>leftToRight</code></td><td>2</td><td></td></tr>
 <tr><td><code>topToBottom</code></td><td>3</td><td></td></tr>
 </table>
-          @attr name android:direction
+          @attr name android.tether:direction
         */
         public static final int MultiDirectionSlidingDrawer_direction = 0;
         /**
@@ -440,7 +441,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:handle
+          @attr name android.tether:handle
         */
         public static final int MultiDirectionSlidingDrawer_handle = 1;
         /**
@@ -456,7 +457,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:topOffset
+          @attr name android.tether:topOffset
         */
         public static final int MultiDirectionSlidingDrawer_topOffset = 4;
     };

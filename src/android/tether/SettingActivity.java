@@ -145,12 +145,16 @@ public class SettingActivity extends Activity {
 	    this.settingIpBtn = (Button)findViewById(R.id.ipAddressSettingButton);
 	    this.settingIpBtn.setOnClickListener(new OnClickListener(){
 	    	public void onClick(View v){
-	    		EditText ipField = (EditText)findViewById(R.id.ipAddressSetting);
+	    		EditText ipField =(EditText)findViewById(R.id.ipAddressSetting);
+	    		
+	    		//ipField.setText("192.168.104."+ipField.getText().toString());
+	    			    		
 	    		boolean result = SettingActivity.this.application.settingIp(ipField.getText().toString());
 	    		if(result)
 	    			Toast.makeText(SettingActivity.this, "IPアドレスを["+ipField.getText().toString()+"]に設定", Toast.LENGTH_LONG).show();
 	    		else
-	    			Toast.makeText(SettingActivity.this, "IPアドレス設定に失敗", Toast.LENGTH_LONG).show();
+	    			Toast.makeText(SettingActivity.this, "IPアドレス設定に失敗["+ipField.getText().toString()+"]", Toast.LENGTH_LONG).show();
+	    		
 	    	}
 	    });
 		
