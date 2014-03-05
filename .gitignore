@@ -1,0 +1,16 @@
+src/test/
+.svn
+*/.svn
+*/*/.svn
+*/*/*/.svn
+*/*/*/*/.svn
+*/*/*/*/*/.svn
+*/*/*/*/*/*/.svn
+*/*/*/*/*/*/*/.svn
+bin
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+*/*/*/*/.DS_Store
+*/*/*/*/*/.DS_Store

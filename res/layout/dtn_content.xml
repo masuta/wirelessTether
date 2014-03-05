@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".DtnActivity"
+    android:background="#f0f8ff" >
+    
+    <LinearLayout
+        android:id="@+id/main_box"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:background="#f0f8ff"
+	    android:layout_weight="1">
+	    
+        <TextView 
+	        android:id="@+id/dtn_algorithm_kind"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dip"
+	        android:text="DTNアルゴリズム: not Set"
+	        android:textColor="#000000" />
+	    
+        <TextView 
+	        android:id="@+id/dtn_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dip"
+	        android:text="DTNステータス: アルゴリズムストップ"
+	        android:textColor="#000000" />
+        <TextView
+            android:id="@+id/dtn_status_my_mode"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dip"
+	        android:text=""
+	        android:textColor="#000000" />
+        
+        <View android:id="@+id/targetText_label_border"
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"
+		   android:layout_marginBottom="3dip"
+		   android:background="#b0c4de"
+		   />
+        
+        <Button
+            android:id="@+id/changeToRescueMode"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dip"
+	        android:text="要救助者に変更" />
+        
+        <View android:id="@+id/targetText_label_border"
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"
+		   android:layout_marginBottom="3dip"
+		   android:background="#b0c4de"
+		/>
+        
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	        <Button
+		        android:id="@+id/algolithm_startButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Start" />
+	        <Button
+		        android:id="@+id/algolithm_stopButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Stop" />
+	    </LinearLayout>
+	    
+	        
+	    <TextView 
+	        android:id="@+id/dtn_message_box_listView_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="受信したレスキューメッセージ"
+	        android:textColor="#000000"
+	        />
+	    <View android:id="@+id/targetText_label_border"
+		   android:layout_width="fill_parent"
+		   android:layout_height="2dp"       
+		   android:background="#b0c4de"
+		   />
+		 <ListView
+		    android:id="@+id/dtn_message_box_listView"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"
+		    android:background="#000000" ></ListView>
+	</LinearLayout>
+    <it.sephiroth.demo.slider.widget.MultiDirectionSlidingDrawer
+        xmlns:my="http://schemas.android.com/apk/res/android.tether"
+        android:id="@+id/drawerBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/content"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle"
+        android:layout_weight="6"
+         >
+		<include
+			android:id="@id/content"
+			layout="@layout/dtn_content_addmessage" />
+		<Button
+			android:id="@id/handle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="↑レスキューメッセージをセット↑"
+			/>
+	</it.sephiroth.demo.slider.widget.MultiDirectionSlidingDrawer>
+    
+</LinearLayout>
